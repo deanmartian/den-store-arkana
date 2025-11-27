@@ -326,8 +326,12 @@ export default function Home() {
                 <div className="md:col-span-1 flex justify-center">
                   <div className="relative">
                     <div className="absolute -inset-2 bg-gradient-to-r from-amber-600/30 to-amber-400/30 rounded-full blur-xl" />
-                    <div className="relative w-48 h-48 rounded-full border-4 border-amber-500/40 bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
-                      <span className="text-6xl font-bold text-amber-400">HA</span>
+                    <div className="relative w-48 h-48 rounded-full border-4 border-amber-500/40 overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900">
+                      <img
+                        src="https://ugc.same-assets.com/PGitHE3NGd-Sm-mSU4DCEzs9EbO9S4xh.png"
+                        alt="Henrik Aareskjold - forfatter"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>
