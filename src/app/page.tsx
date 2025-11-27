@@ -15,8 +15,37 @@ export default function Home() {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
+  // Structured data for SEO
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    name: "Den Store Arkana",
+    author: {
+      "@type": "Person",
+      name: "Henrik Aareskjold",
+      birthDate: "1984",
+      birthPlace: "Sola, Rogaland, Norge",
+    },
+    genre: ["Fantasy", "Science Fiction", "Noveller", "Magisk realisme"],
+    inLanguage: "no",
+    isbn: "",
+    numberOfPages: "",
+    publisher: {
+      "@type": "Organization",
+      name: "Henrik Aareskjold",
+    },
+    description: "En novellesamling inspirert av tarotkortenes mystikk. Historier som spenner fra hverdagsliv til fantasi, sci-fi og mørke eventyr.",
+    bookFormat: "https://schema.org/Hardcover",
+    datePublished: "2025",
+  };
+
   return (
     <div className="min-h-screen mystical-gradient">
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
         {/* Decorative stars */}
