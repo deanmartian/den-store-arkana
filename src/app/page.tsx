@@ -397,11 +397,11 @@ export default function Home() {
                   <div className="space-y-3 py-4">
                     <div className="flex items-center gap-3 text-amber-100/70">
                       <div className="w-2 h-2 bg-amber-500 rounded-full" />
-                      <span><strong className="text-amber-200">Format:</strong> Innbundet / Pocket</span>
+                      <span><strong className="text-amber-200">Format:</strong> Innbundet</span>
                     </div>
                     <div className="flex items-center gap-3 text-amber-100/70">
                       <div className="w-2 h-2 bg-amber-500 rounded-full" />
-                      <span><strong className="text-amber-200">Pris:</strong> 299,- kr</span>
+                      <span><strong className="text-amber-200">Pris:</strong> 379,- kr</span>
                     </div>
                     <div className="flex items-center gap-3 text-amber-100/70">
                       <div className="w-2 h-2 bg-amber-500 rounded-full" />
