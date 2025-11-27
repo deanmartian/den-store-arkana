@@ -469,17 +469,30 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-12 px-4 bg-slate-950 border-t border-amber-500/20">
-        <div className="container mx-auto text-center space-y-4">
+        <div className="container mx-auto text-center space-y-6">
           <div className="flex items-center justify-center gap-3 text-amber-400/60">
             <Moon className="w-6 h-6" />
             <Star className="w-5 h-5" />
             <Sparkles className="w-6 h-6" />
           </div>
           <h3 className="text-2xl font-bold gold-text">Den Store Arkana</h3>
-          <p className="text-amber-100/60">Henrik Aareskjold © 2026</p>
+          <p className="text-amber-100/60">Henrik Aareskjold © 2024</p>
           <p className="text-amber-100/50 text-sm max-w-2xl mx-auto">
             La tarotkortenes mystikk ta deg med til en verden av drømmer og mareritt
           </p>
+
+          <div className="pt-6 border-t border-amber-500/10">
+            <p className="text-amber-100/50 text-sm">
+              Nettside laget av{" "}
+              <a
+                href="mailto:sven.inge@forfatterskolen.no"
+                className="text-amber-400/80 hover:text-amber-300 underline underline-offset-2 transition-colors"
+              >
+                Sven Inge Henningsen
+              </a>
+              {" "}– Forfatterskolen
+            </p>
+          </div>
         </div>
       </footer>
 
