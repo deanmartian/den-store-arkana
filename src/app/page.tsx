@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -11,6 +12,21 @@ import {
 import { Moon, Star, Sparkles, Book, Heart, Zap } from "lucide-react";
 
 export default function Home() {
+  const [stars, setStars] = useState<Array<{ top: string; left: string; width: string; height: string; animationDuration: string; animationDelay: string }>>([]);
+
+  useEffect(() => {
+    // Generate stars only on client side to avoid hydration mismatch
+    const generatedStars = Array.from({ length: 30 }, () => ({
+      top: `${Math.random() * 100}%`,
+      left: `${Math.random() * 100}%`,
+      width: `${Math.random() * 8 + 4}px`,
+      height: `${Math.random() * 8 + 4}px`,
+      animationDuration: `${Math.random() * 3 + 2}s`,
+      animationDelay: `${Math.random() * 2}s`,
+    }));
+    setStars(generatedStars);
+  }, []);
+
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -50,16 +66,16 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
         {/* Decorative stars */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(30)].map((_, i) => (
+          {stars.map((star, i) => (
             <Star
               key={i}
               className="absolute text-amber-400/20"
               style={{
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                width: `${Math.random() * 8 + 4}px`,
-                height: `${Math.random() * 8 + 4}px`,
-                animation: `twinkle ${Math.random() * 3 + 2}s infinite ${Math.random() * 2}s`,
+                top: star.top,
+                left: star.left,
+                width: star.width,
+                height: star.height,
+                animation: `twinkle ${star.animationDuration} infinite ${star.animationDelay}`,
               }}
             />
           ))}
@@ -310,12 +326,8 @@ export default function Home() {
                 <div className="md:col-span-1 flex justify-center">
                   <div className="relative">
                     <div className="absolute -inset-2 bg-gradient-to-r from-amber-600/30 to-amber-400/30 rounded-full blur-xl" />
-                    <div className="relative w-48 h-48 rounded-full border-4 border-amber-500/40 overflow-hidden">
-                      <img
-                        src="https://ugc.same-assets.com/P-qNsIVsETe8Tt-z0SBzJcg9cCGO_q5c.png"
-                        alt="Henrik Aareskjold - forfatter"
-                        className="w-full h-full object-cover"
-                      />
+                    <div className="relative w-48 h-48 rounded-full border-4 border-amber-500/40 bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
+                      <span className="text-6xl font-bold text-amber-400">HA</span>
                     </div>
                   </div>
                 </div>
