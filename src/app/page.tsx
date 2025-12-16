@@ -153,40 +153,9 @@ export default function Home() {
           </div>
 
           <div className="space-y-6 text-lg text-amber-100/80 leading-relaxed">
-            <p>
-              <strong className="text-amber-200">Andrine, snart peppermø</strong>, lever et selvopptatt og bekymringsfritt liv på jenterommet hos foreldrene.
-              Hun er en håpløs romantiker, og i motsetning til sine to søsken som er utdannet hjertekirurg og forretningsadvokat,
-              er hennes eneste ambisjon i livet å finne den perfekte mannen.
+            <p className="text-center text-xl italic text-amber-300 py-4">
+              En maktsyk konge … Et søvnløst barn … En fisketur utenom det vanlige … En farlig last mellom stjernene …
             </p>
-
-            <p>
-              En dag blir hun sjekket opp av Martin på reisebyrået hvor hun jobber, og tror at målet er nådd.
-              Men verken mannen eller forholdet tilfredsstiller Andrines forventninger. Så kommer Pysa, den lille hunden
-              med den store personligheten overraskende inn i livet hennes, og tilværelsen tar en uventet vending.
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-4 my-8">
-              <Card className="bg-slate-900/50 border-amber-500/30">
-                <CardContent className="p-6 text-center">
-                  <p className="text-amber-200 font-semibold">En maktsyk konge …</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-slate-900/50 border-amber-500/30">
-                <CardContent className="p-6 text-center">
-                  <p className="text-amber-200 font-semibold">Et søvnløst barn …</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-slate-900/50 border-amber-500/30">
-                <CardContent className="p-6 text-center">
-                  <p className="text-amber-200 font-semibold">En fisketur utenom det vanlige …</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-slate-900/50 border-amber-500/30">
-                <CardContent className="p-6 text-center">
-                  <p className="text-amber-200 font-semibold">En farlig last mellom stjernene …</p>
-                </CardContent>
-              </Card>
-            </div>
 
             <p className="text-center text-xl italic text-amber-300 py-6">
               La tarotkortenes mystikk ta deg med til en verden av drømmer og mareritt …
@@ -279,26 +248,13 @@ export default function Home() {
                 <div className="absolute -left-4 -top-4 text-6xl text-amber-500/20 font-serif">"</div>
                 <div className="space-y-4 text-lg text-amber-100/90 leading-relaxed italic pl-4">
                   <p>
-                    Månen hang lavt over havnen den natten, så stor og nær at hun nesten kunne strekke ut hånden
-                    og røre ved den. Esmeralda visste at noe skulle skje. Kortene hadde advart henne – Tårnet,
-                    Døden, og til slutt, Narren.
+                    Han vant det første kongedømmet ved å målbinde prinsessen, en ung møy kjent for å være så vrien og vrang i ord. Den gamle kongen ble så imponert av dette mesterstykket at han gjorde ham til sin arving. Det ble holdt et storslått bryllup, men ikke lenge etter ble den gamle kongen syk og døde. Da en respektfull sørgeperiode var over, ble den nye kongen signet og kronet.
                   </p>
                   <p>
-                    Men hun hadde aldri vært god til å lytte.
-                  </p>
-                  <p>
-                    Skipet ved kai nummer syv skulle seile ved midnatt. Ingen visste hva det fraktet, men rykter
-                    hadde florert i uker. Noen sa levende varer. Andre hvisket om noe verre – noe som ikke skulle
-                    ha blitt vekket.
-                  </p>
-                  <p>
-                    Hun trakk kappen tettere rundt seg og gikk nedover bryggen. Månen kastet lange skygger mellom
-                    tønner og tau. Lyden av vann mot trebåter fylte natten, sammen med noe annet – en lav
-                    murring, som kom fra dypet av skipets lasterom.
+                    Han og dronningen levde i fred og fordragelighet, landet var rikt og på god fot med sine naboer. Men etter noen år skjedde det en endring i den unge kongen. Maten smakte ikke godt mer, makten han hadde føltes hul, og han avskydde sin kone. Han hadde heller ikke noe til overs for utsendingene fra de andre kongedømmene, som skrøt uhemmet over deres egne rikdommer og vidstrakte provinser.
                   </p>
                   <p className="text-amber-300 font-semibold not-italic">
-                    «Du skulle ha lyttet til kortene,» hvisket hun til seg selv, akkurat idet døren til lasterommet
-                    svingte opp, og noe forflyttet seg i mørket innenfor.
+                    En plan tok rot i tankene hans.
                   </p>
                 </div>
                 <div className="absolute -right-4 -bottom-4 text-6xl text-amber-500/20 font-serif">"</div>
