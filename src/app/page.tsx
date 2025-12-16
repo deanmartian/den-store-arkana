@@ -52,7 +52,7 @@ export default function Home() {
     },
     description: "En novellesamling inspirert av tarotkortenes mystikk. Historier som spenner fra hverdagsliv til fantasi, sci-fi og mørke eventyr.",
     bookFormat: "https://schema.org/Hardcover",
-    datePublished: "2025",
+    datePublished: "2026-02-15",
   };
 
   return (
@@ -105,13 +105,18 @@ export default function Home() {
               La kortene guide deg gjennom historier som vil holde deg våken lenge etter siste side.
             </p>
 
+            <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 rounded-full px-4 py-2 mb-2">
+              <Star className="w-4 h-4 text-amber-400" />
+              <span className="text-amber-200 font-medium">Utgis 15. februar 2026</span>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-slate-950 font-semibold text-lg px-8 py-6 shadow-2xl shadow-amber-500/20"
                 onClick={() => window.open("https://shop.indiemoon.no/product/den-store-arkana/", "_blank")}
               >
-                Kjøp boken nå
+                Forhåndsbestill nå
               </Button>
               <Button
                 size="lg"
@@ -345,16 +350,25 @@ export default function Home() {
                 </div>
 
                 <div className="space-y-6 text-center md:text-left">
+                  <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 rounded-full px-4 py-2 mb-2">
+                    <Star className="w-4 h-4 text-amber-400" />
+                    <span className="text-amber-200 font-medium">Utgis 15. februar 2026</span>
+                  </div>
+
                   <h3 className="text-2xl font-bold text-amber-200">
                     Oppdag historiene som vil ta deg med på en reise gjennom drømmer og mareritt
                   </h3>
 
                   <p className="text-lg text-amber-100/80 leading-relaxed">
-                    Kjøp <strong className="text-amber-200">Den Store Arkana</strong> i dag og bli med inn i en verden
+                    Forhåndsbestill <strong className="text-amber-200">Den Store Arkana</strong> i dag og bli med inn i en verden
                     hvor tarotkortenes mystikk veves sammen med gripende fortellinger du sent vil glemme.
                   </p>
 
                   <div className="space-y-3 py-4">
+                    <div className="flex items-center gap-3 text-amber-100/70">
+                      <div className="w-2 h-2 bg-amber-500 rounded-full" />
+                      <span><strong className="text-amber-200">Utgivelse:</strong> 15. februar 2026</span>
+                    </div>
                     <div className="flex items-center gap-3 text-amber-100/70">
                       <div className="w-2 h-2 bg-amber-500 rounded-full" />
                       <span><strong className="text-amber-200">Format:</strong> Innbundet</span>
@@ -365,7 +379,7 @@ export default function Home() {
                     </div>
                     <div className="flex items-center gap-3 text-amber-100/70">
                       <div className="w-2 h-2 bg-amber-500 rounded-full" />
-                      <span><strong className="text-amber-200">Levering:</strong> 2-5 virkedager</span>
+                      <span><strong className="text-amber-200">Levering:</strong> Sendes ved utgivelse</span>
                     </div>
                     <div className="flex items-center gap-3 text-amber-100/70">
                       <div className="w-2 h-2 bg-amber-500 rounded-full" />
@@ -378,7 +392,7 @@ export default function Home() {
                     className="w-full bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-slate-950 font-bold text-xl py-7 shadow-2xl shadow-amber-500/30"
                     onClick={() => window.open("https://shop.indiemoon.no/product/den-store-arkana/", "_blank")}
                   >
-                    Kjøp Den Store Arkana
+                    Forhåndsbestill Den Store Arkana
                   </Button>
 
                   <p className="text-sm text-amber-100/60 text-center">
@@ -482,7 +496,7 @@ export default function Home() {
             <Sparkles className="w-6 h-6" />
           </div>
           <h3 className="text-2xl font-bold gold-text">Den Store Arkana</h3>
-          <p className="text-amber-100/60">Henrik Aareskjold © 2025</p>
+          <p className="text-amber-100/60">Henrik Aareskjold © 2026</p>
           <p className="text-amber-100/50 text-sm max-w-2xl mx-auto">
             La tarotkortenes mystikk ta deg med til en verden av drømmer og mareritt
           </p>

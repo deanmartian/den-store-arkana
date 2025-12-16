@@ -4,7 +4,7 @@ import ClientBody from "@/app/ClientBody";
 
 export const metadata: Metadata = {
   title: "Den Store Arkana - Novellesamling av Henrik Aareskjold",
-  description: "En novellesamling inspirert av tarotkortenes mystikk av Henrik Aareskjold. Historier som spenner fra hverdagsliv til fantasi, sci-fi og mørke eventyr. Kjøp boken nå!",
+  description: "En novellesamling inspirert av tarotkortenes mystikk av Henrik Aareskjold. Historier som spenner fra hverdagsliv til fantasi, sci-fi og mørke eventyr. Utgis 15. februar 2026 - forhåndsbestill nå!",
   keywords: [
     "Den Store Arkana",
     "Henrik Aareskjold",
